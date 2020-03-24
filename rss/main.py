@@ -17,7 +17,7 @@ def MainMenu():
 	if MM == "1":
 		AndroidMenu()
 	elif MM == "0":
-		syatem('clear')
+		system('clear')
 		exit()
 	else:
 		print(f"  {GC}[{DF}+{GC}] {YC}Please Choose A Valid Option{DF}")
