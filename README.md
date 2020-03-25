@@ -1,8 +1,6 @@
 # Techploit
 **Auto Metasploit Payload Generator 🔥**
 
-![The Techinfo](img/techinfo.jpg)
-
 *Use This Tool*
 ```markdown
 $ pkg install git python
