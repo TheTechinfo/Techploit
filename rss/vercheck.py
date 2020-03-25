@@ -33,8 +33,8 @@ def verCheck():
 				ver_current = t.read()
 				ver_current = ver_current.strip()
 			print(f"  {GC}Version Status After Update{DF}\n")
-			print(f"  {YC}Current Version v - {GC}{github_ver}{DF}")
-			print(f"  {GC} Available Version v - {GC}{ver_current}{DF}")
+			print(f"  {YC}Current Version v - {GC}{ver_current}{DF}")
+			print(f"  {GC} Available Version v - {GC}{github_ver}{DF}")
 			sleep(5)
 			system('clear')
 	else:
